@@ -1,0 +1,215 @@
+<html>
+<html>
+  <head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="hnf.css">
+	
+<style>
+
+.slidershow{
+  width: 600px;
+  height: 560px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.navigation{
+  position: absolute;
+  bottom: -20px;
+  left: 23%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+
+.text{
+	position: absolute;
+	text-align: left;
+	padding-left: 50%;
+	top: 200px;
+}
+
+.button{
+	border-radius: 25px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 10px 10px;
+	width: 550px;
+	height: 50px;
+	font-size: 18px;
+}
+
+.button2{
+	border-radius: 5px;
+	background-color: #0CE0C6;
+	color: black;
+	text-align: center;
+	margin: 10px 10px;
+	width: 80px;
+	height: 20px;
+	font-size: 14px;
+	background: radial-gradient(white, #f1beaf);
+}
+
+  </style>
+  </head>
+
+  <body>
+  <div class="header">
+    <div class="main">
+            <div class="navbar">
+                <a href="homepage.html"><img src = "images/newlogo.png" width = "250px"/></a>
+                <nav>
+                    <form id="searchbar">
+                        <input id="inputsearchbar" type="text" placeholder="Search.." name="search2">
+                        <div id="button-holder">
+		<img src="images/Searchlogo.png"/>
+	</div>
+                    </form>
+                    <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                        
+                    <li><a href=""></a> Login&nbsp/&nbspSign-Up</li>
+			<a href="shoppingcart.html"><img src="images/cart.png" width="25px" 			height="30px"/></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+<div class="text">
+
+		<br /><br /><br /><br /><br /><br />
+		<p style="font-size: 20px; font-family:Arial;">Limited Edition</p>
+		<p style="font-size: 35px; font-family:Arial; line-height: 1.5;"><b>EMBOSSED MONOGRAM TOP</b></p>
+		<p style="font-size: 20px; font-family:Arial; line-height: 1.5;"><b>Color: White</b></p>
+		<br></br>
+		<p style="font-size: 35px; font-family:Arial; line-height: 2;"><b>RM 99.00</b> 
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		IN STOCK</p>
+		<hr></hr>
+		<p style="font-size: 20px; font-family:Arial; line-height: 2.2;">
+		size
+		<select name="size" id="size">
+		<option value="value1">S</option>
+		<option value="value2">M</option>
+		<option value="value3">L</option>
+		<option value="value4">XL</option>
+		</select>
+		<a href="MeasuringTable.html">
+		<button class="button2"><b>SizeChart</b></button>
+		</a>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		
+		Quantity&nbsp;<input type="number" name="No"/>
+		<button class="button">Add to cart</button>
+		</p>
+		<br></br>
+		<p style="font-size: 15px; font-family:Arial; line-height: 2;"><b>Product description</b></p>
+		<p style="font-size: 13px; font-family:Arial;">Here at StylishNotts, we prioritise our customer and envioronment over                  everything else. We are able to bring forth the luxury of high class clothing to a very affordable price range by                      using recycled rabric and our special formula to form our main fabric type. This allows us to lower cost and save                 the environment. </p>
+	</div>
+
+    
+
+
+    <div class="slidershow middle">
+       <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <div class="slide s1">
+          <img src="images/front1(1).png" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/back1.png" alt="">
+        </div>
+      </div>
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+      </div>
+    </div>
+
+
+<br></br>
+
+<div class="footer">
+ <div class="content">
+ <div class="row">
+ <div class="footer-col-1">
+ <h3>&nbsp&nbsp&nbsp&nbsp&nbspOur App</h3>
+ <p>&nbsp&nbsp&nbsp&nbspAvailable for both Apple AppStore and Google PlayStore</p>
+ <div class="app-logo">
+ <img src="images/appstore.png"/>
+ <img src="images/googleplay.png"/>
+ </div>
+ </div>
+ <div class="footer-col-2">
+ <a href="homepage.html"><img src="images/newlogo.png" style="width: 350px; height= 350px"></a>
+ <p>Our aim is to provide high-end cloths for a resonable price to allow people to have a taste of luxury</p>
+ </div>
+ <div class="footer-col-3">
+ <h3>Useful Links</h3>
+ <ul>
+ <li>Newsletter</li>
+ <li>About Us</li>
+ <li>Legal & Privacy</li>
+ <li>Blog</li>
+ </ul>
+ </div>
+ <div class="footer-col-4">
+ <h3>Follow Us</h3>
+ <ul>
+ <li>Facebook</li>
+ <li>Instagram</li>
+ <li>Twitter</li>
+ <li>Pinterest</li>
+ </ul>
+ </div>
+ </div>
+ <hr>
+ <p class="copyright">Copyright&copy 2021</p>
+ </div> 
+ </div>
+  </body>
+</html>
